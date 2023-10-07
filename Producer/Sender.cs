@@ -12,9 +12,12 @@ namespace Producer
             {
                 HostName = "192.168.0.13",
                 Port = 5672,
+                UserName = "cmargok",
+                Password = "Pollito@1"
             }; 
             
             Console.WriteLine("Presiona enter para enviar mensaje");
+
             Console.ReadLine();
 
             //creamos conexion
