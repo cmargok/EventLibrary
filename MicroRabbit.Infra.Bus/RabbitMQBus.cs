@@ -165,8 +165,6 @@ namespace MicroRabbit.Infra.Bus
 
                 }
             }
-
-
         }
     }
 }
