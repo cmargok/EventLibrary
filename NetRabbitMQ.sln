@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusLibrary", "EventBus
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{C07A2D01-3658-4786-8496-79B003016DE9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBusNugetLibrary.Clean", "EventBusNugetLibrary.Clean", "{42C7ACA4-D115-4D73-B212-9C81236872DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusCleanLibrary", "EventBusCleanLibrary\EventBusCleanLibrary.csproj", "{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{F119D006-3FA8-4AA2-ABA2-AC15797BAD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F119D006-3FA8-4AA2-ABA2-AC15797BAD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F119D006-3FA8-4AA2-ABA2-AC15797BAD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{74DA2888-9D7D-4BD0-9225-CD1CB180639F} = {BB2F1FDA-40E2-4248-A4E3-6011E062B58B}
 		{CBC9C4CF-C63B-4EC4-8C24-5DEF4E886D53} = {AD5CCF20-F083-4A7C-819B-0A43BF0395E8}
 		{F119D006-3FA8-4AA2-ABA2-AC15797BAD11} = {69BDECA2-5D28-4EE4-98D0-916CF48982FF}
+		{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6} = {42C7ACA4-D115-4D73-B212-9C81236872DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20FB1C35-928F-465C-8771-DCDD502A9A77}

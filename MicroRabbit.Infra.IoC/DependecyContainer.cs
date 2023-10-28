@@ -2,6 +2,7 @@
 using MicroRabbit.Infra.Bus;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace MicroRabbit.Infra.IoC
 {
@@ -13,6 +14,9 @@ namespace MicroRabbit.Infra.IoC
             services.AddTransient<IEventBus, RabbitMQBus>();
 
             services.Configure<RabbitMQSettings>(config.GetSection("RabbitMQSettings"));
+
+            services.AddMediatR(config =>
+                config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         }
     }
 }

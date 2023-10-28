@@ -4,9 +4,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+  
+	  
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	  <PackageId>EventBusRabbitMQGenerics</PackageId>
-	  <Version>1.0.0</Version>
+	  <Version>1.0.2</Version>
 	  <Authors>KevinCamargo</Authors>
 	  <Description>Ofrece una implementacion de rabbitmq por medio de una interfaz que maneja eventos genericos de tipo cola</Description>
   </PropertyGroup>
