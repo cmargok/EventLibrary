@@ -7,11 +7,13 @@
   
 	  
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <PackageId>EventBusRabbitMQGenerics</PackageId>
-	  <Version>1.0.3</Version>
+	  <PackageId>K.EventBus.RabbitMQ.MediatR</PackageId>
+	  <Version>1.0.0</Version>
 	  <Authors>KevinCamargo</Authors>
 	  <Description>It offers an implementation of rabbitmq through an interface that handles generic queue events.</Description>
-	  <owners>KevinCamargo</owners>
+	  <owners>
+		  <owner>KevinCamargo</owner>
+	  </owners>
 	  <projectUrl>https://github.com/cmargok/EventLibrary</projectUrl>
 	  <requireLicenseAcceptance>true</requireLicenseAcceptance>
 	  <releaseNotes>Changing activator for serviceScopeFactory to imporove dependency injection with constructors with params</releaseNotes>

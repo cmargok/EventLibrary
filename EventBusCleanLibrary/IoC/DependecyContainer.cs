@@ -1,7 +1,7 @@
 ﻿using EventBusCleanLibrary.Bus;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
+using Microsoft.Extensions.Options;
 
 namespace EventBusCleanLibrary.IoC
 {
@@ -10,15 +10,18 @@ namespace EventBusCleanLibrary.IoC
         public static IServiceCollection AddEventBus(this IServiceCollection services, IConfiguration config)
         {
 
-          //  services.AddTransient<IEventBus, RabbitMQBus>();
+            services.AddSingleton<IEventBus, RabbitMQBus>(opt =>
+            {
+                var serviceScopeFactory = opt.GetRequiredService<IServiceScopeFactory>();
 
-            services.Configure<RabbitMQSettings>(config.GetSection("RabbitMQSettings"));
+                var options = opt.GetService<IOptions<RabbitMQSettings>>();
 
-            services.AddMediatR(config =>
-           config.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
+                if (serviceScopeFactory is null) throw new ArgumentNullException(nameof(serviceScopeFactory));
 
-            services.AddMediatR(config =>
-               config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+                return new RabbitMQBus(options!, serviceScopeFactory);
+            });
+
+            services.Configure<RabbitMQSettings>(config.GetSection("RabbitMQSettings"));          
 
             return services;
         }

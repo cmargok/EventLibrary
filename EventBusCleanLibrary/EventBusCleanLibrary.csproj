@@ -4,9 +4,26 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageId>K.EventBus.RabbitMQ</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>KevinCamargo</Authors>
+	  <Description>It offers an implementation of rabbitmq through an interface that handles generic queue events.</Description>
+	  <owners>
+		  <owner>KevinCamargo</owner>
+	  </owners>
+	  <projectUrl>https://github.com/cmargok/EventLibrary</projectUrl>
+	  <requireLicenseAcceptance>true</requireLicenseAcceptance>
+	  <releaseNotes>Changing activator for serviceScopeFactory to imporove dependency injection with constructors with params</releaseNotes>
+	  <copyright>Copyright ©2023 Kevin Camargo</copyright>
+	  <tags>web utility event rabbitmq</tags>
   </PropertyGroup>
+		
+		
+		
 	<ItemGroup>
-		<PackageReference Include="MediatR" Version="12.1.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />

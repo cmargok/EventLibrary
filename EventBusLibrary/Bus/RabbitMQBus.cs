@@ -152,7 +152,6 @@ namespace EventBusLibrary.Bus
             {
                 using (var scope =  _serviceScopeFactory.CreateScope()) 
                 { 
-
                     var subscriptions = _handlers[eventName];
 
                     foreach (var subscription in subscriptions)

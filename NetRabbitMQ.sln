@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Infra.IoC", "Mi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBusNugetLibrary", "EventBusNugetLibrary", "{69BDECA2-5D28-4EE4-98D0-916CF48982FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusLibrary", "EventBusLibrary\EventBusLibrary.csproj", "{F119D006-3FA8-4AA2-ABA2-AC15797BAD11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K.EventBus.MediatR", "EventBusLibrary\K.EventBus.MediatR.csproj", "{F119D006-3FA8-4AA2-ABA2-AC15797BAD11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{C07A2D01-3658-4786-8496-79B003016DE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBusNugetLibrary.Clean", "EventBusNugetLibrary.Clean", "{42C7ACA4-D115-4D73-B212-9C81236872DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusCleanLibrary", "EventBusCleanLibrary\EventBusCleanLibrary.csproj", "{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusCleanLibrary", "EventBusCleanLibrary\EventBusCleanLibrary.csproj", "{3C1BE6BD-A6F1-4DC8-918F-793402EE56C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
