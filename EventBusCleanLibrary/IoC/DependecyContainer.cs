@@ -20,8 +20,8 @@ namespace EventBusCleanLibrary.IoC
 
                 return new RabbitMQBus(options!, serviceScopeFactory);
             });
-
-            services.Configure<RabbitMQSettings>(config.GetSection("RabbitMQSettings"));          
+            var h = config.GetSection("RabbitMQSettings");
+            services.Configure<RabbitMQSettings>(h);          
 
             return services;
         }
