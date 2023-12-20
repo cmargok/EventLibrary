@@ -24,6 +24,7 @@ namespace EventBusCleanLibrary.IoC
             services.Configure<RabbitMQSettings>(h);          
 
             return services;
+
         }
     }
 }
